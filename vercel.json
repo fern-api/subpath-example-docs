@@ -1,0 +1,12 @@
+{
+  "rewrites": [
+    {
+      "source": "/docs/api-fern/:path*",
+      "destination": "https://docs.buildwithfern.com/docs/api-fern/:path*"
+    },
+    {
+      "source": "/fern/:path*",
+      "destination": "https://docs.buildwithfern.com/fern/:path*"
+    }
+  ]
+}
