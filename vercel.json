@@ -5,6 +5,10 @@
       "destination": "https://deep-subpath.docs.buildwithfern.com/fern/:path*"
     },
     {
+      "source": "/docs",
+      "destination": "https://deep-subpath.docs.buildwithfern.com/docs"
+    },
+    {
       "source": "/docs/:path*",
       "destination": "https://deep-subpath.docs.buildwithfern.com/docs/:path*"
     }
