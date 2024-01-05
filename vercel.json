@@ -1,8 +1,8 @@
 {
   "rewrites": [
     {
-      "source": "/fern/:path*",
-      "destination": "https://deep-subpath.docs.buildwithfern.com/fern/:path*"
+      "source": "/_fern/:path*",
+      "destination": "https://deep-subpath.docs.buildwithfern.com/_fern/:path*"
     },
     {
       "source": "/docs",
