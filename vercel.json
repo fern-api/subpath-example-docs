@@ -2,11 +2,11 @@
   "rewrites": [
     {
       "source": "/docs",
-      "destination": "https://deep-subpath.docs.buildwithfern.com/docs"
+      "destination": "https://fern.docs.dev.buildwithfern.com/docs"
     },
     {
       "source": "/docs/:path*",
-      "destination": "https://deep-subpath.docs.buildwithfern.com/docs/:path*"
+      "destination": "https://fern.docs.dev.buildwithfern.com/docs/:path*"
     }
   ]
 }
