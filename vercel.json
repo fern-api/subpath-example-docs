@@ -1,11 +1,11 @@
 {
   "rewrites": [
     {
-      "source": "/docs",
+      "source": "/learn",
       "destination": "https://fern.docs.dev.buildwithfern.com/learn"
     },
     {
-      "source": "/docs/:path*",
+      "source": "/learn/:path*",
       "destination": "https://fern.docs.dev.buildwithfern.com/learn/:path*"
     }
   ]
