@@ -3,15 +3,15 @@ import { NextResponse } from "next/server";
 
 export function middleware(request: NextRequest) {
   const headers = new Headers(request.headers);
-  headers.set("X-Fern-Host", "octo.ai");
+  headers.set("X-Fern-Host", "buildwithfern.com");
 
   const url = request.nextUrl.clone();
-  url.host = "app-staging.buildwithfern.com";
+  url.host = "fern-middleware-rewrite-test.vercel.app";
 
   return NextResponse.rewrite(url, { request: { headers } });
 }
 
 // See "Matching Paths" below to learn more
 export const config = {
-  matcher: ["/docs", "/docs/", "/docs/:path*/"],
+  matcher: ["/learn/", "/learn/:path*/"],
 };
