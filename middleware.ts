@@ -6,12 +6,12 @@ export function middleware(request: NextRequest) {
   headers.set("X-Fern-Host", "octo.ai");
 
   const url = request.nextUrl.clone();
-  url.host = "app-slashferndocscom-buildwithfern.vercel.app";
+  url.host = "app-staging.buildwithfern.com";
 
   return NextResponse.rewrite(url, { request: { headers } });
 }
 
 // See "Matching Paths" below to learn more
 export const config = {
-  matcher: ["/docs/", "/docs/:path*/"],
+  matcher: ["/docs", "/docs/", "/docs/:path*/"],
 };
