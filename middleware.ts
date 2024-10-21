@@ -6,7 +6,7 @@ export function middleware(request: NextRequest) {
   headers.set("X-Fern-Host", "buildwithfern.com");
 
   const url = request.nextUrl.clone();
-  url.host = "fern-middleware-rewrite-test.vercel.app";
+  url.host = "app.ferndocs.com";
 
   return NextResponse.rewrite(url, { request: { headers } });
 }
